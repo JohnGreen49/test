@@ -52,8 +52,13 @@ on:
         required: true
         default: 'warning'
       testCell:
+        type: choice
         description: 'Test cell to process'     
         required: true
+        options:
+          - Cell01/Fulfillment
+          - Cell02/DriverApp
+          - Cell03/Load-Time-Service
         
 permissions:
   contents: read
