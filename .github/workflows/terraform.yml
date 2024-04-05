@@ -42,12 +42,10 @@
 #       with:
 #         cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
 
-name: 'Terraform'
+name: 'BuildEnv'
 
-on:
-  push:
-    branches: [ "master" ]
-  pull_request:
+on: 
+  workflow_dispatch:
 
 permissions:
   contents: read
