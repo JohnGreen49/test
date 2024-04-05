@@ -55,14 +55,12 @@ on:
         description: 'Test cell to process'     
         required: true
             choice:
-        type: choice
-        description: Make a choice
-        options:
-        - Cell01
-        - Cell02
-        - Cell03
-      tags:
-        description: 'Test scenario tags'  
+      type: choice
+      description: Make a choice
+      options:
+      - Cell01
+      - Cell02
+      - Cell03
         
 permissions:
   contents: read
