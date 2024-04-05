@@ -46,7 +46,24 @@ name: 'BuildEnv'
 
 on: 
   workflow_dispatch:
-
+   inputs:
+      logLevel:
+        description: 'Log level'     
+        required: true
+        default: 'warning'
+      testCell:
+        description: 'Test cell to process'     
+        required: true
+            choice:
+        type: choice
+        description: Make a choice
+        options:
+        - Cell01
+        - Cell02
+        - Cell03
+      tags:
+        description: 'Test scenario tags'  
+        
 permissions:
   contents: read
 
